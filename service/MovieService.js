@@ -1,11 +1,21 @@
-import axios from 'axios';
+import axios from "axios";
 
-const get = searchValue => {
-  return axios.get(`http://www.omdbapi.com/?apikey=8515daa4&s=${searchValue}`);
+const API_KEY = "41250625009617e91c5ad82fbd838793";
+const BASE_URL = "https://api.themoviedb.org/3/";
+
+const getSearched = (searchValue) => {
+  return axios.get(
+    `${BASE_URL}search/movie?api_key=${API_KEY}&query=${searchValue}`
+  );
+};
+
+const getPopular = () => {
+  return axios.get(`${BASE_URL}movie/popular/?api_key=${API_KEY}`);
 };
 
 const MovieService = {
-  get,
+  getSearched,
+  getPopular,
 };
 
 export default MovieService;

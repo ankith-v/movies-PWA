@@ -1,23 +1,15 @@
 import Head from "next/head";
-import Movies from "../components/Movies";
-import Navbar from "../components/Navbar";
 import SearchBar from "../components/SearchBar";
 import { useState } from "react";
+import PopularMovies from "../components/PopularMovies";
 
-export default function Home({ articles }) {
-  const [search, setSearch] = useState(" ");
-
+export default function Home() {
   return (
     <div>
       <Head>
-        <title>Title</title>
+        <title>Movies</title>
       </Head>
-      <SearchBar
-        onChange={(e) => {
-          if (e.target.value.length > 3) setSearch(e.target.value);
-        }}
-      />
-      <Movies searchValue={search} />
+      <PopularMovies />
     </div>
   );
 }
