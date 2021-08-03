@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Movie from "../components/Movie";
 import MoviesList from "../components/MoviesList";
+import { Text } from "@chakra-ui/layout";
 
 export default function Home({ movies }) {
   return (
@@ -8,7 +9,9 @@ export default function Home({ movies }) {
       <Head>
         <title>Movies</title>
       </Head>
-      Popular Movies
+      <Text paddingLeft="3" paddingTop="3" fontSize="2xl">
+        Popular Movies
+      </Text>
       <MoviesList movies={movies} />
     </div>
   );
