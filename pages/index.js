@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Movie from "../components/Movie";
+import MoviesList from "../components/MoviesList";
 
 export default function Home({ movies }) {
   return (
@@ -8,13 +9,7 @@ export default function Home({ movies }) {
         <title>Movies</title>
       </Head>
       Popular Movies
-      {movies.map((movie) => {
-        return (
-          <div key={movie.id}>
-            <Movie movie={movie} />
-          </div>
-        );
-      })}
+      <MoviesList movies={movies} />
     </div>
   );
 }

@@ -1,7 +1,6 @@
-import { Image, Link, Center } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import MovieService from "../service/MovieService";
-import Movie from "./Movie";
+import MoviesList from "./MoviesList";
 
 const SearchMovies = (props) => {
   const [movies, setMovies] = useState([]);
@@ -21,13 +20,7 @@ const SearchMovies = (props) => {
 
   return (
     <div>
-      {movies.map((movie) => {
-        return (
-          <div key={movie.id}>
-            <Movie movie={movie} />
-          </div>
-        );
-      })}
+      <MoviesList movies={movies} />
     </div>
   );
 };

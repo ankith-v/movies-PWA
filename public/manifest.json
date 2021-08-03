@@ -4,7 +4,7 @@
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
-  "app_name": "MoviesPWA",
+  "app_name": "Movies",
   "short_name": "MPWA",
   "description": "NextJS PWA for movies",
   "icons": [

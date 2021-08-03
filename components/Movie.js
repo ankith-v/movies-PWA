@@ -1,20 +1,17 @@
-import { Image, Link, Center } from "@chakra-ui/react";
+import { Image, Link, Center, Box } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
-import MovieService from "../service/MovieService";
 
 const Movie = (props) => {
   return (
-    <div>
+    <Box padding="2">
       {props.movie.original_title}
-      <Center>
-        <Image
-          src={`https://image.tmdb.org/t/p/w400/${props.movie.poster_path}`}
-          alt="#movie poster#"
-          borderRadius="lg"
-          maxW="60"
-        />
-      </Center>
-    </div>
+      <Image
+        src={`https://image.tmdb.org/t/p/w400/${props.movie.poster_path}`}
+        alt="#movie poster#"
+        borderRadius="lg"
+        maxW="60"
+      />
+    </Box>
   );
 };
 
