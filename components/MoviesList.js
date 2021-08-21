@@ -1,5 +1,5 @@
 import Movie from "./Movie";
-import { Box, Flex } from "@chakra-ui/layout";
+import { Flex } from "@chakra-ui/layout";
 
 const MoviesList = ({ movies }) => {
   console.log(movies);
