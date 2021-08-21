@@ -13,7 +13,7 @@ const Navbar = () => {
       paddingRight="1rem"
       align="center"
       flexDirection="row-reverse"
-      bg="black"
+      bg="blackAlpha.900"
     >
       <Switch
         colorScheme="darkgray"
@@ -23,13 +23,27 @@ const Navbar = () => {
 
       <Flex>
         <Link href="/" passHref>
-          <Button as="a" variant="ghost" aria-label="Home" my={5} w="100%">
+          <Button
+            as="a"
+            variant="ghost"
+            aria-label="Home"
+            my={5}
+            w="100%"
+            color="gray.500"
+          >
             Home
           </Button>
         </Link>
 
         <Link href="/search" passHref>
-          <Button as="a" variant="ghost" aria-label="About" my={5} w="100%">
+          <Button
+            as="a"
+            variant="ghost"
+            aria-label="About"
+            my={5}
+            w="100%"
+            color="gray.500"
+          >
             Search
           </Button>
         </Link>

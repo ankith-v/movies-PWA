@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Movie from "../components/Movie";
 import MoviesList from "../components/MoviesList";
 import { Text } from "@chakra-ui/layout";
 
