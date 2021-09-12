@@ -21,7 +21,7 @@ const Navbar = () => {
         onChange={toggleColorMode}
       />
 
-      <Flex>
+      <Flex marginRight="auto">
         <Link href="/" passHref>
           <Button
             as="a"
@@ -30,6 +30,7 @@ const Navbar = () => {
             my={5}
             w="100%"
             color="gray.400"
+            marginRight="2"
           >
             Home
           </Button>
