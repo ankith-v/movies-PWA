@@ -29,7 +29,7 @@ const Navbar = () => {
             aria-label="Home"
             my={5}
             w="100%"
-            color="gray.500"
+            color="gray.400"
           >
             Home
           </Button>
@@ -39,10 +39,10 @@ const Navbar = () => {
           <Button
             as="a"
             variant="ghost"
-            aria-label="About"
+            aria-label="Search"
             my={5}
             w="100%"
-            color="gray.500"
+            color="gray.400"
           >
             Search
           </Button>
