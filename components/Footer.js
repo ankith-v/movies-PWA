@@ -10,12 +10,13 @@ const Footer = () => {
         width: "100%",
       }}
     >
-      <Flex backgroundColor="blackAlpha.900">
+      <Flex backgroundColor="">
         <Link
           href="https://www.themoviedb.org"
           isExternal
           alignSelf="center"
           marginRight="2"
+          marginLeft="10"
         >
           <Image src="tmdblogo.png" alt="logo" height="16" />
         </Link>
@@ -25,14 +26,22 @@ const Footer = () => {
           alignSelf="center"
           marginRight="2"
           marginLeft="auto"
+          borderRadius="3xl"
         >
-          <Image src="nextjslogo.png" alt="logo" height="16" />
+          <Image
+            src="nextjslogo.png"
+            alt="logo"
+            height="12"
+            backgroundColor="whiteAlpha.600"
+            paddingX="2"
+            borderRadius="lg"
+          />
         </Link>
         <Link
           href="https://chakra-ui.com"
           isExternal
           alignSelf="center"
-          marginRight="2"
+          marginRight="10"
           marginLeft="auto"
         >
           <Image src="chakralogo.png" alt="logo" height="12" />
