@@ -18,12 +18,14 @@ const Movie = (props) => {
         >
           {props.movie.original_title}
         </Text>
-        <Image
-          src={`https://image.tmdb.org/t/p/w400/${props.movie.poster_path}`}
-          alt="#movie poster#"
-          borderRadius="lg"
-          maxW="60"
-        />
+        <Box borderRadius="lg" width="60" minH="72">
+          <Image
+            src={`https://image.tmdb.org/t/p/w400/${props.movie.poster_path}`}
+            alt=""
+            borderRadius="lg"
+            maxW="60"
+          />
+        </Box>
       </Link>
     </Box>
   );

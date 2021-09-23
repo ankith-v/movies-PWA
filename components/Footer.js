@@ -10,7 +10,7 @@ const Footer = () => {
         width: "100%",
       }}
     >
-      <Flex backgroundColor="">
+      <Flex>
         <Link
           href="https://www.themoviedb.org"
           isExternal
